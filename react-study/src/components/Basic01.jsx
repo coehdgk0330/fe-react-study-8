@@ -36,18 +36,19 @@
                 <h3>{hello3}</h3>
                 {
                     //삼항연산자
-                    flag = true ? <p>{hello1}</p> : <p>{hello2}</p>
+                    flag == true ? <p>{hello1}</p> : <p>{hello2}</p>
                 }
                 
                 {
-                    flag = true && <p>{hello1}</p>
+                    flag == true && <p>{hello1}</p>
                 }
 
                 {
-                    flag = false && <p>{hello2}</p> 
+                    flag == false && <p>{hello2}</p> 
                 }
 
-                <h2 style={{color:'blue', fontSize:'25px'}}>{himsg}</h2>
+                <h2>{himsg}</h2>
+                {/* ={{color:'blue', fontSize:'25px'}} */}
                 
             </div>
         )
